@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-numbers = list(range(10))
+numbers = list(range(1,11))
 squares = [number**2 for number in numbers]
 print(numbers)
 print(squares)
