@@ -30,10 +30,40 @@ test_data_np = test_data_np.reshape(-1, 2)
 pikachu_data_np = read_and_convert(pikachu_path)
 pichu_data_np = read_and_convert(pichu_path)
 
+# Scatter plots
+# ..._data_np[:, 0] x-values (width)
+# ... data_np[:, 1] y-values (lenght)
+# color='' sets color to the dots
+# label= set the "name" of the plots
+plt.scatter(pichu_data_np[:, 0], pichu_data_np[:, 1], color='black', label='pichu')
+plt.scatter(pikachu_data_np[:, 0], pikachu_data_np[:, 1], color='yellow', label='pikachu')
+plt.scatter(test_data_np[:, 0], test_data_np[:, 1], color='blue', label='test points')
 
-print(pichu_data_np)
-print(pikachu_data_np)
-print(test_data_np)
+plt.xlabel('Width (cm)')
+plt.ylabel('Lenght (cm)')
+plt.title('Pichu vs Pikachu')
+plt.legend()
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
